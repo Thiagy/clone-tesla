@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'tesla';
+    src: url("TESLA.ttf") format("truetype");
+}
+html{
+    overscroll-behavior: smooth;
+    overflow-y: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.logo{
+    font-family: 'tesla';
+    letter-spacing: 9.5px;
+    font-size: 18.5px;
+    font-weight: 560;
+    width: 334.5px;
+    padding: 20px 47px;
+}
+.menu-principal{
+    display: flex;
+    justify-content: center;
+    width: 677px;
+    padding-left: 24px;
+}
+.shop-account-menu{
+    padding-left: 74px;
+    display: flex;
+    justify-content: center;
+    width: 334.5px;
+}
+.menu-principal a{
+    padding: 8px 16.5px;
+    border-radius: 4px;
+    font-size: 0.96em;
+    letter-spacing: 1px;
+}
+.shop-account-menu a{
+    padding: 8px 16.5px;
+    border-radius: 4px;
+    font-size: 0.96em;
+    letter-spacing: 1px;
+}
+.menu-principal a:hover{
+    background-color: #4E545B;
+}
+.shop-account-menu a:hover{
+    background-color: #4E545B;
+}
+aside{
+    background-color: white;
+    position: fixed;
+    transition: right .3s ease;
+    right: -294px;
+    width: 294px;
+    height: 650px;
+    overflow: auto;
+    padding: 79px 30px;
+    z-index: 6;
+}
+.close{
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    padding: 6px 12px;
+    font-size: 24px;
+    border: 0;
+    cursor: pointer;
+    color: #393C41;
+    font-weight: 500;
+    background-color: transparent;
+}
+.close:hover{
+    background-color: #F2F2F2;
+}
+aside a{
+    line-height: 18px;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-size: 14.4px;
+    font-weight: 500;
+}
+aside a:hover{
+    background-color: #F2F2F2;
+}
+.backdrop{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0,.35);
+    backdrop-filter: blur(5px);
+}
+.section-pricipal{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('images/pg-model-3/model-3-main.jfif');
+}
+.linear-gradient-1{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, black 1%, rgba(255, 255, 255, 0) 23%, transparent 76% );
+}
+.content{
+    position: absolute;
+    z-index: 3;
+    padding-top: 3.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 335px;
+    color: white;
+}
+.text h1{
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+.text p{
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.box-car-profile{
+    display: flex;
+    width: 100%;
+    padding-left: 342px;
+    gap: 108px;
+}
+.car-profile{
+    color: white;
+    text-align: center;
+}
+.car-profile h2{
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 7px;
+}
+.car-profile p{
+    font-size: 12px;
+}
+.order-now{
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    margin-left: -25px;
+    letter-spacing: 1.5px;
+}
+.order-now:hover{
+    color: black;
+   background-color: white;
+}
+.bate-papo{
+    position: fixed;
+    top: 492px;
+    right: 32px;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px -1px 1px 1px  rgba(0, 0, 0, .2), -1px 1px 1px 1px  rgba(0, 0, 0, .2);
+}
+.high-impact-protection{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.seta-up{
+    display: none;
+    transition: .1s;
+    background-image: url("images/pg-model-3/seta-up.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    cursor: pointer;
+    top: 13px;
+    right: 19px;
+    height: 13px;
+    width: 20px;
+    z-index: 3;
+}
+.seta-down{
+    background-image: url("images/pg-model-3/seta-down.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+    bottom: 13px;
+    right: 50%;
+    transform: translate(-50%);
+    height: 13px;
+    width: 20px;
+    z-index: 3;
+}
+.navigation{
+    position: fixed;
+    top: 137px;
+    left: 0;
+    z-index: 6;
+    padding-left: 12px;
+    color: white;
+}
+.navigation div{
+    font-size: 0.6rem;
+    transition: .1s;
+}
+.block-white{
+    height: 20px;
+    width: 1px;
+    background-color: white;
+}
+.text-block-white{
+    opacity: 0;
+    padding: 2.5px 0;
+}
+.text-block-white:hover{
+    opacity: 1;
+}
+.text-image-safety{
+    width: 27.7%; 
+    padding-top: 51px;
+    padding-right: 20px;
+}
+.text-image-safety h1{
+    width: 64.27%;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.text-image-safety h4{
+    font-weight: 100;
+    font-size: 18px;
+}
+.text-image-safety p{
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.box-button-div-safety{
+    display: flex;
+    gap: 11px;
+    width: 360px;
+    margin-top: 10.4em;
+    width: 100%;
+}
+.div-learn-more{
+    display: flex;
+    width: 132px;
+    height: 40px;
+    gap: 4px;
+    align-items: center;
+}
+.div-learn-more p{
+    font-size: 14px;
+}
+.high-impact-protection-image{
+    position: relative;
+    width: 73%;
+    margin-top: 20px;
+    
+}
+.high-impact-protection-image img{
+    width: 62.6%;
+    position: absolute;
+    top: 149px;
+    left: 157px;
+    
+}
+.first{
+    position: absolute;
+    top: 134px;
+    left: 302px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+.second{
+    position: absolute;
+    top: 73px;
+    left: 492px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.tree{
+    position: absolute;
+    top: 467px;
+    left: 521px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.order-now-div-video{
+    border: 3px solid #171A20;
+    background-color: transparent;
+    color: #171A20;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.order-now-div-video:hover{
+    color: white;
+   background-color: #171A20;
+}
+.find-my-route-div-video{
+    border: 3px solid black;
+    background-color: transparent;
+    color: #171A20;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.find-my-route-div-video:hover{
+    background-color: #171A20;
+    color: white;
+}
+.section-third-img{/*Terceira Sessão*/
+    position: relative;
+    background-image: url("images/pg-model-3/Model-3-Performance-Hero-Desktop-LHD.jfif");
+    height: 405px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 15.62em;
+}
+.box-car-profile-2{
+    display: flex;
+    width: 100%;
+    padding-left: 326px;
+    gap: 200px;
+}
+.car-profile{
+    color: white;
+}
+.car-profile h2{
+    font-size: 28px;
+    font-weight: 540;
+}
+.beyond-ludicrous{
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 20px;
+    gap: 5px;
+}
+.beyond-ludicrous div h1{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.beyond-ludicrous div{
+    width: 407.328px;
+    margin-bottom: 15px;
+}
+.beyond-ludicrous p{
+    width: 623px;
+    padding-right: 20px;
+}
+.order-now-2{
+    border: 3px solid #171A20;
+    background-color: transparent;
+    color: #171A20;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.order-now-2:hover{
+    color: white;
+   background-color: #171A20;
+}
+.order-now-3{
+    border: 1px solid transparent;
+    background-color: #EEEEEE;
+    color: #171A20;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+.div-sub-section-third{
+    padding-top: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+}
+.sub-section-third-1{
+    width: 29.81%;
+}
+.sub-section-third-1 h1{
+    font-size: 28px;
+    color: #171A20;
+}
+.sub-section-third-1 p{
+    font-size: 17px;
+    color: #171A20;
+    margin-bottom: 4px;
+    letter-spacing: 1.2px;
+}
+.sub-section-third-2{
+    width: 40.6%;
+}
+.box-car-profile-model-3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+.car-profile-model-3{
+    color: white;
+    text-align: center;
+    width: 16.5em;
+}
+.car-profile-model-3 h2{
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 7px;
+}
+.car-profile-model-3 p{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.box-button-section-third{
+    display: flex;
+    gap: 12px;
+    height: 41px;
+    margin-top: 20px;
+}
+.learn-more-2{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.learn-more-2 p{
+    color: #171A20;
+    font-size: 14px;
+}
+.learn-button{
+    border: 3px solid black;
+    background-color: transparent;
+    color: #393C41;
+    font-size: 26px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn-button:hover{
+    background-color: #171A20;
+    color: white;
+}
+.btn-order-now-section-third{
+    border: 3px solid #171A20;
+    background-color: transparent;
+    color: #171A20;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.btn-order-now-section-third:hover{
+    color: white;
+    background-color: #171A20;
+}
+.all-wheel-drive{/*Quarta Sessão*/
+    position: relative;
+    background-image: url("images/pg-model-3/blue-car-model-3.jfif");
+    height: 349px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 13.3em;
+}
+.box-car-profile-all-wheel-drive{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+}
+.div-sub-all-wheel-drive{
+    padding-top: 44px;
+    padding-left: 156px;
+    display: flex;
+    gap: 76px;
+}
+.sub-all-wheel-drive-1{
+    width: 29.81%;
+}
+.sub-all-wheel-drive-1 h1{
+    font-size: 28px;
+    color: #171A20;
+    letter-spacing: 1px;
+}
+.sub-all-wheel-drive-1 p{
+    font-size: 17px;
+    color: #171A20;
+    margin-bottom: 4px;
+    letter-spacing: 1.2px;
+}
+.sub-all-wheel-drive-2{
+    width: 54%;
+    letter-spacing: 1px;
+}
+.box-button-all-wheel-drive{
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+    margin-top: 22px;
+}
+.btn-order-now-all-wheel-drive-1{
+    border: 3px solid #171A20;
+    background-color: transparent;
+    color: #171A20;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+.btn-order-now-all-wheel-drive-1:hover{
+    color: white;
+    background-color: #171A20;
+}
+.btn-order-now-all-wheel-drive-2{
+    border: 1px solid transparent;
+    background-color: #EEEEEE;
+    color: #171A20;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+.box-background-img-range{/*Range*/
+    display: flex;
+    height: 100vh;
+}
+.background-image{
+    position: relative;
+    width: 69.54%;
+    background-image: url("images/pg-model-3/range-model-3.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-image img{
+    width: 100%;
+}
+.box-car-profile-range{
+    position: absolute;
+    bottom: 63px;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    padding-left: 47px;
+}
+.box-car-profile-range div{
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-weight: 500;
+}
+.box-car-profile-range div h2{
+    font-size: 28px;
+}
+.box-car-profile-range div p{
+    font-size: 13px;
+    padding-top: 8px;
+}
+.tex-image-range{
+    position: relative;
+    width: 30.45%;
+    padding: 0 40px;
+}
+.seta-text-image-range{
+    height: 30px;
+    width: 18px;
+    position: absolute;
+    left: 90.7%;
+    padding-top: 13px;
+}
+.seta-text-image-range img{
+    height: 11px;
+    width: 100%;
+}
+.tex-image-range h4{
+    font-size: 17px;
+    font-weight: lighter;
+    margin-top: 52px;
+ }
+.tex-image-range h1{
+    margin-top: 3px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+.tex-image-range p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.box-button-div-range{
+    display: flex;
+    width: 360px;
+    margin-top: 14.2em;
+    width: 100%;
+}
+.div-learn-more-range{
+    display: flex;
+    width: 140px;
+    height: 40px;
+    gap: 9px;
+    align-items: center;
+}
+.div-learn-more-range p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.div-cameras-with-sense-1{
+    background-image: url("images/pg-model-s/Autopilot-Hero-Vision-Desktop.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 64.8vh;
+    padding-top: 32px;
+    padding-left: 65px;
+    margin-bottom: 43px;
+}
+.cameras-with-sense{
+    width: 100%;
+}
+.div-text-camearas-with-sense{
+    height: 100%;
+    width: 23%;
+    
+}
+.div-text-camearas-with-sense div{
+    margin-bottom: 45px;
+}
+.div-text-camearas-with-sense div h1{
+    font-size: 28px;
+}
+.div-text-camearas-with-sense div p{
+    font-size: 13px;
+    padding-top: 8px;
+    margin-bottom: 26px;
+}
+.div-sub-auto-pilot{
+    display: flex;
+    padding-left: 157px;
+    gap: 70px;
+   
+   
+}
+.sub-section-auto-pilot-1{
+    width: 29.81%;
+}
+.sub-section-auto-pilot-1 h1{
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #171A20;
+}
+.sub-section-auto-pilot-1 p{
+    font-size: 17px;
+    color: #171A20;
+    margin-bottom: 4px;
+    letter-spacing: 1.2px;
+}
+.sub-section-auto-pilot-2{
+    width: 48.6%;
+}
+.div-learn-more-auto-pilot{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    gap: 7px;
+    align-items: center;
+}
+.div-learn-more-auto-pilot p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.box-button-auto-pilot{
+    display: flex;
+    height: 41px;
+    margin-top: 23px;
+}
+.div-cameras-with-sense-2{/*Interior*/
+    background-image: url("images/pg-model-3/Model-3-Interior-Hero-Desktop-LHD.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 64.8vh;
+    margin-bottom: 43px;
+    display: flex;
+    justify-content: flex-end;
+}
+.div-text-interior-car-model-3{
+    height: 100%;
+    width: 20.5%;
+    margin-top: 35px;
+    margin-right: 55px;
+}
+.div-text-interior-car-model-3 div{
+    margin-bottom: 60px;
+    color: white;
+}
+.div-text-interior-car-model-3 div h1{
+    font-size: 28px;
+}
+.div-text-interior-car-model-3 div p{
+    font-size: 14px;
+    padding-top: 8px;
+    margin-bottom: 26px;
+}
+.div-model-s-specs{/*Specs*/
+    background-color: black;
+    color: white;
+    padding-bottom: 40px;
+    height: 100vh;
+}
+.div-flex-model-s-specs{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    gap: 3.81em;
+}
+.tables{
+    width: 42%;
+}
+.tables h1{
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+.div-description-model-s-specs{
+    display: flex;
+}
+hr{
+    width: 10%;
+    height: 1px;
+    margin-bottom: 14px;
+}
+.div-image-model-s-specs{
+    background-image: url("images/pg-model-3/Model-3-Specs-Desktop-Mobile-LHD.jfif");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 51%;
+   
+}
+.table-model-s-plaid{
+    width: 41.4%;
+}
+.table-model-s{
+    width: 41.4%;
+}
+.table-model-s-plaid p{
+    line-height: 22px;
+    font-size: 14px;
+}
+.table-model-s p{
+    line-height: 22px;
+    font-size: 14px;
+}
+.spacing{
+    margin-bottom: 18px;
+}
+.btn-model-s-plaid{
+    font-size: 12px;
+    border-radius: 4px;
+    width: 228.609px;
+    height: 32px;
+    border: 3px solid white;
+    background-color: transparent;
+    padding: 4px 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.btn-model-s{
+    font-size: 12px;
+    border-radius: 4px;
+    width: 228.609px;
+    height: 32px;
+    border: 3px solid #222222;
+    background-color: transparent;
+    padding: 4px 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.div-btn-model-s-specs{
+    text-align: center;
+}
+.div-model-s-white-car{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    
+}
+.box-button-white-car{
+    width: 52%;
+    padding: 264px 0 0 156px;
+}
+.box-button-white-car h1{
+    font-size: 28px;
+    padding-bottom: 32px;
+    color: #171A20;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.model-s-image-white-car{
+    width: 52.5%;
+    padding-top: 147px;
+    padding-left: 30px;
+}
+.model-s-image-white-car img{
+    width: 95%;
+}
+.btn-order-now-white-car{
+    border-radius: 4px;
+    margin-right: 20px;
+    border: 3px solid #171A20;
+    width: 12.75rem;
+    height: 2.5rem;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 4px 24px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+.btn-order-now-white-car:hover{
+   color: white;
+    background-color: #171A20;
+}
+.btn-view-inventory-white-car{
+    border-radius: 4px;
+    border: 1px solid transparent;
+    width: 12.75rem;
+    height: 2.5rem;
+    background-color: #EEEEEE;
+    font-size: 14px;
+    padding: 4px 24px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+.list-footer{
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    color: #171A20;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    color: #5C5E62;
+}
+.ancora-footer{
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+.footer p{
+    width: 46%;
+    font-size: 13.49px;
+    margin-bottom: 20px;
+    color: #5C5E62;
+    font-weight: 500;
+}
+
+
+
+

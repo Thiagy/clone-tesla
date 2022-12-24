@@ -1,0 +1,112 @@
+.section-pricipal-model-x{
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('images/pg-model-x/model-x-main.jfif');
+}
+.section-third-model-x{
+    background-image: url("images/pg-model-x/Model-X-Performance-Hero-Desktop-LHD.jfif");
+    height: 361px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 230.969px;
+}
+.background-video-model-x{
+    background-image: url("images/pg-model-x/Model-X-Utility-Hero-Desktop-LHD.jfif");
+    height: 100vh;
+    width: 69.54%;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 500px;
+}
+.box-car-profile-model-x{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.car-profile-model-x{
+    color: white;
+    text-align: center;
+    width: 230px;
+}
+.car-profile-model-x h1{
+    font-size: 28px;
+}
+.car-profile-model-x p{
+    font-size: 12px;
+}
+.designed-for-efficiency-image-model-x{
+    background-image: url("images/pg-model-x/Model-X-Exterior-Hero-Desktop-Global.jfif");
+    background-position: center center;
+    background-size: cover;
+    height: 349px;
+    width: 100%;
+}
+.buy-now-model-x{
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.custom-order-model-x{
+    border: 1px solid transparent;
+    background-color: #1f2123;
+    color: white;
+    padding: 4px 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 40px;
+    width: 204px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+.buy-now-model-x:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+.custom-order-model-x:hover{
+    background-color: #393c41;
+    color: white;
+    transition: 0.5s;
+}
+.background-video-model-range{
+    background-image: url("images/pg-model-x/Model-X-Range-Hero-Desktop-LHD.jfif");
+    height: 100vh;
+    width: 69.54%;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 500px;
+}
+.auto-pilot-model-x{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 5px;
+}
+.auto-pilot-model-x div h1{
+    font-size: 28px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.auto-pilot-model-x div p{
+    letter-spacing: 1px;
+}
+.auto-pilot-model-x div{
+    width: 407.328px;
+    margin-bottom: 15px;
+}
+.auto-pilot-model-x p{
+    width: 623px;
+    padding-right: 20px;
+}

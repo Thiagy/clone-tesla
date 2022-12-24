@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'tesla' ;
+    src: url("TESLA.ttf") format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    overscroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+aside{
+    background-color: white;
+    position: fixed;
+    transition: right .3s ease;
+    right: -18.375rem;
+    width: 18.375rem;
+    height: 40.625rem;
+    overflow: auto;
+    padding: 4.9375rem 1.875rem;
+    z-index: 3;
+}
+.close{
+    position: absolute;
+    top: 1.1875rem;
+    right: 1.375rem;
+    padding: 6px 12px;
+    font-size: 1.5rem;
+    border: 0;
+    cursor: pointer;
+    color: #393C41;
+    font-weight: 500;
+    font-family: sans-serif;
+    background-color: transparent;
+}
+.close:hover{
+    background-color: #F2F2F2;
+}
+aside a{
+    line-height: 1.124rem;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 0.75rem 0.9375rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+aside a:hover{
+    background-color: #F2F2F2;
+}
+.backdrop{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0,.35);
+    backdrop-filter: blur(4.5px);
+}
+.logo{
+    font-family: 'tesla';
+    letter-spacing: 0.59rem;
+    font-size: 1.2rem;
+    font-weight: 590;
+    width: 20%;
+    padding: 1.25rem 2.9375rem 1.25rem 3.07rem;
+}
+.menu-principal{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding-left: 1.6rem;
+}
+.shop-account-menu{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    
+}
+.menu-principal a{
+    padding: 0.5rem 1.03125rem;
+    border-radius: 0.25rem;
+    font-size: 0.96em;
+    letter-spacing: 1.1px;
+}
+.shop-account-menu a{
+    padding: 0.5rem 1.03125rem;
+    border-radius: 0.25rem;
+    font-size: 0.96em;
+    letter-spacing: 1px;
+}
+.menu-principal a:hover{
+    background-color: #CDD6E0;
+}
+.shop-account-menu a:hover{
+    background-color: #CDD6E0;
+}
+section{
+    height: 100vh;
+   
+    background-position: center center;
+    background-size: cover;
+}
+.content{
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+    transition: opacity .3s ease-in;
+    padding-bottom: 1.2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 300px;
+}
+section.active .content{
+    opacity: 1;
+   
+}
+.text h1{
+    text-align: center;
+    font-size: 2.625rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+.text a{
+    padding-top: 0.625rem;
+    font-size: 0.96rem;
+    font-family: sans-serif;
+    text-decoration: underline;
+    word-spacing: 3px;
+}
+.custom-order{
+    height: 40px;
+    min-height: auto;
+    width: 16.5rem;
+    background-color: rgba(23, 26, 32, 0.78);
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    font-weight: 540;
+    letter-spacing: 1px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+.existing-inventory{
+    height: 40px;
+    min-height: auto;
+    width: 16.5rem;
+    background-color: rgba(232, 233, 231, 0.55);
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    margin-left: 1.15635rem;
+    color: #3B3F43;
+    font-size: 0.9375rem;
+    font-weight: 540;
+    letter-spacing: 1px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+.down-arrow{
+    background-image: url("images/homepage/seta-down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 11px;
+    width: 20px;
+    position: fixed;
+    top: 93.3vh;
+    left: 49.3%;
+    transition: opacity .3s ease-in;
+    z-index: 3;
+}
+.list-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+    list-style: none;
+    gap: 20px;
+    color: #171A20;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    color: #5C5E62;
+    margin-bottom: 28px;
+}
+.section-7{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (max-width: 1200px){
+    header{
+        justify-content: space-between;
+    }
+    .menu-principal{
+        display: none;
+    }
+    #shop{
+        display: none;
+    }
+    #account{
+        display: none;
+    }
+    .shop-account-menu{
+        justify-content: flex-end;
+        margin-right: 5px;
+    }
+    .shop-account-menu a{
+        background-color: rgba(186, 204, 217, 0.3);
+        backdrop-filter: blur(10px);
+    }
+    .shop-account-menu a:hover{
+        background-color: #BBC7D2;
+    }
+    .content{
+        gap: 265px;
+        padding-bottom: 2.5vh;
+    }
+}
+@media (max-width: 839px){
+    .custom-order{
+        width: 9.875rem;
+    }
+    .existing-inventory{
+        width: 9.875rem;
+        padding: 0.75rem 1rem;
+    }
+    .content{
+        gap: 300px;
+        padding-bottom: 2.5vh;
+    }
+    .content{
+        gap: 293px;
+        padding-bottom: 1.4vh;
+    }
+}
+@media (max-width: 600px){
+    .section-1{
+        background-image: url("images/homepage/model-3-menor.jfif");
+    }
+    .section-2{
+        background-image: url("images/homepage/model-y-menor.jfif");
+    }
+    .section-3{
+        background-image: url("images/homepage/model-s-menor.jfif");
+    }
+    .section-4{
+        background-image: url("images/homepage/model-x-menor.jfif");
+    }
+    .section-5{
+        background-image: url("images/homepage/solar-roof-menor.webp");
+    }
+    .section-6{
+        background-image: url("images/homepage/solar-roof-menor.webp");
+    }
+    .section-7{
+        background-image: url("images/homepage/accessories-menor.jfif");
+    }
+    .div-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        width: 91.4%;
+    }
+    .custom-order{
+        width: 100%;
+    }
+    .existing-inventory{
+        width: 100%;
+        margin-left: 0;
+    }
+    .content{
+        gap: 253px;
+        padding-bottom: 0.02vh;
+    }
+    .list-footer{
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        margin-bottom: 13px;
+    }
+    .oculto{
+        display: none;
+    }
+}
+
