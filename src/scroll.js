@@ -6,13 +6,14 @@ function rolar() {
     console.log(`Altura: ${altura}`)
     console.log(`Altura do content: ${alturaContent}`)
     console.log()
-    if(altura >= 0){
-        down_arrow[0].style.opacity=1
-        content[0].style.opacity='1'/*Com a altura maior ou igual à 0, o "Model 3" se mantém visível*/
-    }
+    
     if(altura >= 115){
         down_arrow[0].style.opacity=0
         content[0].style.opacity='0'/*Com a altura maior ou igual à 115, o "Model 3" se torna invisível*/
+    }
+    if(altura < 115){
+        down_arrow[0].style.opacity=1
+        content[0].style.opacity='1'/*Com a altura maior ou igual à 0, o "Model 3" se mantém visível*/
     }
     if(altura >= 440){
         content[1].style.opacity='1'/*Com a altura maior ou igual à 440, o "Model Y" se torna visível*/
@@ -29,7 +30,7 @@ function rolar() {
     if(altura >= 1695){
         content[3].style.opacity='1'/*Com a altura maior ou igual à 1690, o "Model X" se torna visível*/
     }
-    if(altura < 1690 || altura > 1985){
+    if(altura < 1695 || altura > 1985){
         content[3].style.opacity='0'/*Com a altura menor que 1690 ou maior que 1990, o "Model X" se torna invisível*/
     }
     if(altura >= 2310){
@@ -47,7 +48,7 @@ function rolar() {
     if(altura >= 3590){
         content[6].style.opacity='1'/*Com a altura maior ou igual à 3580, o "Accessories" se torna visível*/
     }
-    if(altura < 3580 || altura > 3850){
+    if(altura < 3590 || altura > 3850){
         content[6].style.opacity='0'/*Com a altura menor que 3580 ou maior que 3850, o "Accessories" se torna invisível*/
     }
     

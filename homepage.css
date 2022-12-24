@@ -130,7 +130,7 @@ section{
     height: 100vh;
     gap: 300px;
 }
-section.active .content{
+#active{
     opacity: 1;
 }
 .text h1{
