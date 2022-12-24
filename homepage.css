@@ -112,7 +112,6 @@ aside a:hover{
 }
 section{
     height: 100vh;
-   
     background-position: center center;
     background-size: cover;
 }
@@ -133,7 +132,6 @@ section{
 }
 section.active .content{
     opacity: 1;
-   
 }
 .text h1{
     text-align: center;
