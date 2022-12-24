@@ -259,27 +259,6 @@ section.active .content{
     }
 }
 @media (max-width: 600px){
-    .section-1{
-        background-image: url("images/homepage/model-3-menor.jfif");
-    }
-    .section-2{
-        background-image: url("images/homepage/model-y-menor.jfif");
-    }
-    .section-3{
-        background-image: url("images/homepage/model-s-menor.jfif");
-    }
-    .section-4{
-        background-image: url("images/homepage/model-x-menor.jfif");
-    }
-    .section-5{
-        background-image: url("images/homepage/solar-roof-menor.webp");
-    }
-    .section-6{
-        background-image: url("images/homepage/solar-roof-menor.webp");
-    }
-    .section-7{
-        background-image: url("images/homepage/accessories-menor.jfif");
-    }
     .div-button{
         display: flex;
         flex-direction: column;
