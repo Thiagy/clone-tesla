@@ -19,8 +19,17 @@ function rolar(){
     console.log(`Altura da janela: ${altura_janela}`);
     console.log(`Largura da janela: ${largura_janela}`);
     console.log(`Distancia do top: ${altura}`)
+    content[0].style.opacity=1/*O "Model 3" se torna invisível*/
+    down_arrow[0].style.opacity=1
+
+    text_h1.innerHTML="Model 3"
+    text_a.innerHTML='Schedule a Test Drive'
+    text_a.href='https://www.tesla.com/drive'
+
+    btn_custom_order.innerHTML=`Altura da janela: ${altura_janela}`
+    btn_existing_inventory.innerHTML=`Largura da janela: ${largura_janela}`
     
-    if(largura_janela<=2560 && altura_janela<=1345){
+    if(altura_janela>=1345){
         if(altura >= 0){/*"Model 3" começa a se tornar invisível*/
         content[0].style.opacity=1
         down_arrow[0].style.opacity=1
@@ -499,7 +508,7 @@ function rolar(){
           }
     }
 
-    if(largura_janela<=1440 && altura_janela<=768){
+    if(altura_janela>=768){
         if(altura >= 0){/*"Model 3" começa a se tornar invisível*/
         content[0].style.opacity=1/*O "Model 3" se torna invisível*/
         down_arrow[0].style.opacity=1
@@ -508,8 +517,8 @@ function rolar(){
         text_a.innerHTML='Schedule a Test Drive'
         text_a.href='https://www.tesla.com/drive'
 
-        btn_custom_order.innerHTML='Buy Now'
-        btn_existing_inventory.innerHTML='Custom Order'
+        btn_custom_order.innerHTML=`Altura da janela: ${altura_janela}`
+        btn_existing_inventory.innerHTML=`Largura da janela: ${largura_janela}`
         
         }
         if(altura > 50){
@@ -978,7 +987,8 @@ function rolar(){
           }
     }
 
-    if(largura_janela<=1024 && altura_janela<=538){
+    if(altura_janela>=538){
+
         if(altura >= 0){/*"Model 3" começa a se tornar invisível*/
         content[0].style.opacity=1
         down_arrow[0].style.opacity=1
@@ -1110,7 +1120,6 @@ function rolar(){
         if(altura > 666){
             content[0].style.opacity=0 
         }
-
         if(altura > 933){/*Model S começa a se tornar visível*/
 
         content[0].style.opacity=0.1
@@ -1182,7 +1191,6 @@ function rolar(){
         if(altura > 1204){
             content[0].style.opacity=0 
         }
-
         if(altura > 1471){/*O "Model X" começa a se tornar visível*/
 
         content[0].style.opacity=0.1 
@@ -1196,7 +1204,7 @@ function rolar(){
         btn_custom_order.innerHTML='Buy Now'
         btn_existing_inventory.innerHTML='Custom Order'
 
-    }
+        }
         if(altura > 1485){
             content[0].style.opacity=0.2 
         }
@@ -1254,7 +1262,6 @@ function rolar(){
         if(altura > 1742){
             content[0].style.opacity=0  
         }
-
         if(altura > 2009){/*O "Solar Panels" começa a se tornar visível*/
         text_h1.innerHTML="Solar Panels"
         text_a.innerHTML="Lowest Cost Solar Panels in America"
@@ -1267,7 +1274,7 @@ function rolar(){
         btn_custom_order.innerHTML='Order Now'
         btn_existing_inventory.innerHTML='Learn More'
 
-    }
+        }
         if(altura > 2023){
             content[0].style.opacity=0.2  
         }
@@ -1452,7 +1459,7 @@ function rolar(){
           }
     }
 
-    if(largura_janela<=768 && altura_janela<=538){
+    if(largura_janela>=768 && altura_janela>538){
         if(altura >= 0){/*"Model 3" começa a se tornar invisível*/
         content[0].style.opacity=1
         down_arrow[0].style.opacity=1

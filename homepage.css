@@ -149,9 +149,16 @@ section{
     display: flex;
     gap: 1.15635rem;
 }
+#link_btn_custom_order{
+    border: 1px solid black;
+    width: 48%;
+}
+#link_btn_existing_inventory{
+    border: 1px solid black;
+}
 .custom-order{
     height: 40px;
-    width: 16.5rem;
+    width: 100%;
     background-color: #171a20c7;
     border: 0;
     padding: 0.75rem 1.5rem;
