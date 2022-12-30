@@ -148,19 +148,10 @@ section{
 .div-button{
     display: flex;
     gap: 1.15635rem;
-    justify-content: center;
-    width: 40%;
-}
-#link_btn_custom_order{
-    
-    width: 48.3%;
-}
-#link_btn_existing_inventory{
-    width: 48.3%;
 }
 .custom-order{
     height: 40px;
-    width: 100%;
+    width: 16.5rem;
     background-color: #171a20c7;
     border: 0;
     padding: 0.75rem 1.5rem;
@@ -174,7 +165,7 @@ section{
 }
 .existing-inventory{
     height: 40px;
-    width: 100%;
+    width: 16.5rem;
     background-color: #e8e9e78c;
     border: 0;
     padding: 0.75rem 1.5rem;
