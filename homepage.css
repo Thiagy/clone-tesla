@@ -121,17 +121,13 @@ section{
     width: 100%;
     top: 0;
     z-index: 0;
-    transition: opacity .3s ease-in;
     padding-bottom: 1.2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    gap: 300px;
-}
-#active{
-    opacity: 1;
+    gap: 48.3vh;
 }
 .text h1{
     text-align: center;
@@ -142,17 +138,21 @@ section{
     margin-bottom: 3px;
 }
 .text a{
-    padding-top: 0.625rem;
+    margin-top: 0.625rem;
     font-size: 0.96rem;
     font-family: sans-serif;
     text-decoration: underline;
     word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.div-button{
+    display: flex;
+    gap: 1.15635rem;
 }
 .custom-order{
     height: 40px;
-    min-height: auto;
     width: 16.5rem;
-    background-color: rgba(23, 26, 32, 0.78);
+    background-color: #171a20c7;
     border: 0;
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
@@ -165,19 +165,18 @@ section{
 }
 .existing-inventory{
     height: 40px;
-    min-height: auto;
     width: 16.5rem;
-    background-color: rgba(232, 233, 231, 0.55);
+    background-color: #e8e9e78c;
     border: 0;
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
-    margin-left: 1.15635rem;
     color: #3B3F43;
     font-size: 0.9375rem;
     font-weight: 540;
     letter-spacing: 1px;
     backdrop-filter: blur(10px);
     cursor: pointer;
+    
 }
 .down-arrow{
     background-image: url("images/homepage/seta-down.png");
@@ -190,7 +189,7 @@ section{
     top: 93.3vh;
     left: 49.3%;
     transition: opacity .3s ease-in;
-    z-index: 3;
+    z-index: 0;
 }
 .list-footer{
     display: flex;
@@ -242,14 +241,11 @@ section{
 @media (max-width: 839px){
     .custom-order{
         width: 9.875rem;
+        padding: 0.75rem 1rem;
     }
     .existing-inventory{
         width: 9.875rem;
         padding: 0.75rem 1rem;
-    }
-    .content{
-        gap: 300px;
-        padding-bottom: 2.5vh;
     }
     .content{
         gap: 293px;
@@ -264,12 +260,9 @@ section{
         gap: 14px;
         width: 91.4%;
     }
-    .custom-order{
-        width: 100%;
-    }
-    .existing-inventory{
-        width: 100%;
-        margin-left: 0;
+    
+    aside{
+        width: 60%;
     }
     .content{
         gap: 253px;
@@ -277,12 +270,13 @@ section{
     }
     .list-footer{
         flex-direction: column;
-        gap: 5px;
+        gap: 2px;
         align-items: center;
-        margin-bottom: 13px;
+        margin-bottom: 8px;
     }
     .oculto{
         display: none;
     }
 }
+
 
