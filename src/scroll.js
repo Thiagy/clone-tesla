@@ -8,6 +8,7 @@ function rolar(){
 
     let btn_custom_order = document.getElementsByClassName("custom-order")[0]
     let btn_existing_inventory = document.getElementsByClassName("existing-inventory")[0]
+
     let down_arrow =document.getElementsByClassName("down-arrow")
     
     let content = document.getElementsByClassName("content")/*Tag que se pretende alterar a medida que se move a barra de rolagem*/
@@ -22,12 +23,6 @@ function rolar(){
     content[0].style.opacity=1/*O "Model 3" se torna invisível*/
     down_arrow[0].style.opacity=1
 
-    text_h1.innerHTML="Model 3"
-    text_a.innerHTML='Schedule a Test Drive'
-    text_a.href='https://www.tesla.com/drive'
-
-    btn_custom_order.innerHTML=`Altura da janela: ${altura_janela}`
-    btn_existing_inventory.innerHTML=`Largura da janela: ${largura_janela}`
     
     if(altura_janela>=1345){
         if(altura >= 0){/*"Model 3" começa a se tornar invisível*/
@@ -1879,6 +1874,7 @@ function rolar(){
           if(altura > 2800){
             content[0].style.opacity=0
             btn_existing_inventory.style.display='none'
+           
           }
           if(altura < 2800){
             btn_existing_inventory.style.display=''
