@@ -26,6 +26,7 @@ section{
     margin-bottom: 3px;
 }
 .title a{
+    text-align: center;
     margin-top: 0.625rem;
     font-size: 0.96rem;
     font-family: sans-serif;
