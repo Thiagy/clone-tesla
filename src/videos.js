@@ -5,7 +5,7 @@ function videosSlide1(){
     let design_installation_power_on = document.getElementsByClassName("video-design-installation-power-on")
     let design_installation_power_on_first = document.getElementsByClassName("video-design-installation-power-on-first")
 
-    let navigation = document.getElementsByClassName("navigation")  
+    let navigation = document.getElementsByClassName("navigations")  
     let navigation_first = document.getElementsByClassName("navigation-first")
 
     design_installation_power_on_first[0].style.display='block'
@@ -31,7 +31,7 @@ function videosSlide2(){
     let design_installation_power_on = document.getElementsByClassName("video-design-installation-power-on")
     let design_installation_power_on_first = document.getElementsByClassName("video-design-installation-power-on-first")
 
-    let navigation = document.getElementsByClassName("navigation")  
+    let navigation = document.getElementsByClassName("navigations")  
     let navigation_first = document.getElementsByClassName("navigation-first")
 
     design_installation_power_on_first[0].style.display='none'
@@ -57,7 +57,7 @@ function videosSlide3(){
     let design_installation_power_on = document.getElementsByClassName("video-design-installation-power-on")
     let design_installation_power_on_first = document.getElementsByClassName("video-design-installation-power-on-first")
 
-    let navigation = document.getElementsByClassName("navigation")  
+    let navigation = document.getElementsByClassName("navigations")  
     let navigation_first = document.getElementsByClassName("navigation-first")
 
     design_installation_power_on_first[0].style.display='none'

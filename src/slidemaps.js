@@ -1,5 +1,5 @@
 function slideMaps(){
-    let dual_motor_all_wheel_drive_2 = document.getElementsByClassName("dual-motor-all-wheel-drive-map")
+    let dual_motor_all_wheel_drive_2 = document.getElementsByClassName("slide-map")
     let darkness_line = document.getElementsByClassName("darkness-line")
 
     let date = new Date()

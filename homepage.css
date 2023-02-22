@@ -1,121 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@font-face {
-    font-family: 'tesla' ;
-    src: url("TESLA.ttf") format("truetype");
-}
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: inherit;
-}
-html{
-    overscroll-behavior: smooth;
-}
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3.5rem;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    font-family: sans-serif;
-}
-aside{
-    background-color: white;
-    position: fixed;
-    transition: right .3s ease;
-    right: -18.375rem;
-    width: 18.375rem;
-    height: 40.625rem;
-    overflow: auto;
-    padding: 4.9375rem 1.875rem;
-    z-index: 3;
-}
-.close{
-    position: absolute;
-    top: 1.1875rem;
-    right: 1.375rem;
-    padding: 6px 12px;
-    font-size: 1.5rem;
-    border: 0;
-    cursor: pointer;
-    color: #393C41;
-    font-weight: 500;
-    font-family: sans-serif;
-    background-color: transparent;
-}
-.close:hover{
-    background-color: #F2F2F2;
-}
-aside a{
-    line-height: 1.124rem;
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    padding: 0.75rem 0.9375rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    font-family: sans-serif;
-}
-aside a:hover{
-    background-color: #F2F2F2;
-}
-.backdrop{
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 3;
-    background-color: rgba(0, 0, 0,.35);
-    backdrop-filter: blur(4.5px);
-}
-.logo{
-    font-family: 'tesla';
-    letter-spacing: 0.59rem;
-    font-size: 1.2rem;
-    font-weight: 590;
-    width: 20%;
-    padding: 1.25rem 2.9375rem 1.25rem 3.07rem;
-}
-.menu-principal{
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    padding-left: 1.6rem;
-}
-.shop-account-menu{
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    
-}
-.menu-principal a{
-    padding: 0.5rem 1.03125rem;
-    border-radius: 0.25rem;
-    font-size: 0.96em;
-    letter-spacing: 1.1px;
-}
-.shop-account-menu a{
-    padding: 0.5rem 1.03125rem;
-    border-radius: 0.25rem;
-    font-size: 0.96em;
-    letter-spacing: 1px;
-}
-.menu-principal a:hover{
-    background-color: #CDD6E0;
-}
-.shop-account-menu a:hover{
-    background-color: #CDD6E0;
-}
 section{
     height: 100vh;
     background-position: center center;
     background-size: cover;
 }
-.content{
+#content-homepage{
     opacity: 0;
     position: fixed;
     width: 100%;
@@ -129,7 +17,7 @@ section{
     height: 100vh;
     gap: 48.3vh;
 }
-.text h1{
+.title h1{
     text-align: center;
     font-size: 2.625rem;
     font-family: sans-serif;
@@ -137,7 +25,7 @@ section{
     letter-spacing: 2px;
     margin-bottom: 3px;
 }
-.text a{
+.title a{
     margin-top: 0.625rem;
     font-size: 0.96rem;
     font-family: sans-serif;
@@ -145,11 +33,11 @@ section{
     word-spacing: 3px;
     letter-spacing: 1px;
 }
-.div-button{
+.div-button-homepage{
     display: flex;
     gap: 1.15635rem;
 }
-.custom-order{
+.btn-custom-order{
     height: 40px;
     width: 16.5rem;
     background-color: #171a20c7;
@@ -163,7 +51,7 @@ section{
     backdrop-filter: blur(10px);
     cursor: pointer;
 }
-.existing-inventory{
+.btn-existing-inventory{
     height: 40px;
     width: 16.5rem;
     background-color: #e8e9e78c;
@@ -184,10 +72,10 @@ section{
     background-position: center;
     background-size: contain;
     height: 11px;
-    width: 20px;
+    width: 100%;
+   text-align: center;
     position: fixed;
     top: 93.3vh;
-    left: 49.3%;
     transition: opacity .3s ease-in;
     z-index: 0;
 }
@@ -234,7 +122,6 @@ section{
         background-color: #BBC7D2;
     }
     .content{
-        gap: 265px;
         padding-bottom: 2.5vh;
     }
 }
@@ -248,7 +135,6 @@ section{
         padding: 0.75rem 1rem;
     }
     .content{
-        gap: 293px;
         padding-bottom: 1.4vh;
     }
 }
@@ -265,7 +151,6 @@ section{
         width: 60%;
     }
     .content{
-        gap: 253px;
         padding-bottom: 0.02vh;
     }
     .list-footer{

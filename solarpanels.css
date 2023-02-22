@@ -1,245 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@font-face {
-    font-family: 'tesla';
-    src: url("TESLA.ttf") format("truetype");
-}
 html{
-    overscroll-behavior: smooth;
     overflow-y: hidden;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: inherit;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 56px;
-    z-index: 4;
-    display: flex;
-    align-items: center;
-    color: black;
-}
-.logo{
-    font-family: 'tesla';
-    letter-spacing: 9.5px;
-    font-size: 18.5px;
-    font-weight: 560;
-    width: 334.5px;
-    padding: 20px 47px;
-}
-.menu-principal{
-    display: flex;
-    justify-content: center;
-    width: 677px;
-    padding-left: 24px;
-}
-.shop-account-menu{
-    padding-left: 74px;
-    display: flex;
-    justify-content: center;
-    width: 334.5px;
-}
-.menu-principal a{
-    padding: 8px 16.5px;
-    border-radius: 4px;
-    font-size: 0.96em;
-    letter-spacing: 1px;
-}
-.shop-account-menu a{
-    padding: 8px 16.5px;
-    border-radius: 4px;
-    font-size: 0.96em;
-    letter-spacing: 1px;
-}
-.menu-principal a:hover{
-    background-color: #AFBDCC;
-}
-.shop-account-menu a:hover{
-    background-color: #AFBDCC;
-}
-aside{
-    background-color: white;
-    position: fixed;
-    transition: right .3s ease;
-    right: -294px;
-    width: 294px;
-    height: 650px;
-    overflow: auto;
-    padding: 79px 30px;
-    z-index: 6;
-}
-.close{
-    position: absolute;
-    top: 19px;
-    right: 22px;
-    padding: 6px 12px;
-    font-size: 24px;
-    border: 0;
-    cursor: pointer;
-    color: #393C41;
-    font-weight: 500;
-    background-color: transparent;
-}
-.close:hover{
-    background-color: #F2F2F2;
-}
-aside a{
-    line-height: 18px;
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    padding: 12px 15px;
-    font-size: 14.4px;
-    font-weight: 500;
-}
-aside a:hover{
-    background-color: #F2F2F2;
-}
-.backdrop{
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 5;
-    background-color: rgba(0, 0, 0,.35);
-    backdrop-filter: blur(5px);
-}
-.section-pricipal{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
+.div-main-image{/*Sessão solar panels*/
     background-image: url('images/pg-panel-solar/_25-Hero-D\ \(1\).jfif');
 }
 
-.content{
-    position: absolute;
-    z-index: 3;
-    padding-top: 3.5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    gap: 290px;
-    color: white;
-}
-.text h1{
-    font-size: 42px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 3px;
-    color: black;
-    text-align: center;
-}
-.text p{
-    padding-top: 10px;
-    font-size: 16px;
-    text-align: center;
-    color: black;
-    text-align: center;
-}
-.box-car-profile{
-    display: flex;
-    width: 100%;
-    padding-left: 342px;
-    gap: 90px;
-}
-.car-profile{
-    color: white;
-    text-align: center;
-}
-.car-profile h2{
-    font-size: 28px;
-    font-weight: bolder;
-    margin-bottom: 7px;
-}
-.car-profile p{
-    font-size: 12px;
-}
-.order-now{
-    border: 3px solid white;
-    background-color: transparent;
-    color: white;
-    padding: 4px 24px;
-    font-size: 14px;
-    border-radius: 3px;
-    height: 40px;
-    width: 204px;
-    cursor: pointer;
-    margin-left: -25px;
-    letter-spacing: 1.5px;
-}
-.order-now:hover{
-    color: black;
-   background-color: white;
-}
-.bate-papo{
+.manual-navigation{/*Navigation*/
     position: fixed;
-    top: 492px;
-    right: 32px;
-    height: 52px;
-    width: 52px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 1px -1px 1px 1px  rgba(0, 0, 0, .2), -1px 1px 1px 1px  rgba(0, 0, 0, .2);
-}
-.high-impact-protection{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-.seta-up{
-    display: none;
-    transition: .1s;
-    background-image: url("images/pg-panel-solar/seta-up.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    position: fixed;
-    cursor: pointer;
-    top: 16px;
-    right: 27px;
-    height: 16px;
-    width: 19px;
-    z-index: 3;
-}
-.seta-down{
-    background-image: url("images/pg-panel-solar/seta-down.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    position: absolute;
-    cursor: pointer;
-    bottom: 13px;
-    right: 49%;
-    height: 13px;
-    width: 20px;
-    z-index: 3;
-}
-.navigation{/*Navigation*/
-    position: fixed;
-    top: 137px;
+    top: 186px;
     left: 0;
     z-index: 6;
     padding-left: 12px;
     color: white;
 }
-.navigation div{
+.manual-navigation div{
     font-size: 0.6rem;
     transition: .1s;
 }
@@ -255,265 +29,19 @@ aside a:hover{
 .text-block-white:hover{
     opacity: 1;
 }
-.box-video-savings{/*Savings*/
-    width: 69.15%;
-    overflow: hidden;
-}
-.box-video-savings video{
-    width: 100%;
-}
-.box-button-div-savings{
-    display: flex;
-    width: 360px;
-    margin-top: 17.7em;
-    width: 100%;
-}
-.box-video-design{/*Design*/
-    width: 69.15%;
+
+.design-image{/*Design image*/
+    height: 100vh;
     background-image: url("images/pg-panel-solar/_25-Design-D.jfif");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.box-button-design{
-    display: flex;
-    gap: 12px;
-    height: 41px;
-    margin-top: 263px;
-}
-.powerwall{/*powerwall*/
-    background-image: url("images/pg-panel-solar/PW-Inverter-Hero-D.jfif");
-    height: 349px;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 13.3em;
-}
-.power-on{/*power On*/
-    height: 405px;
-    width: 100%;
-    overflow: hidden;
-}
-.power-on video{
-    width: 100%;
-}
-.text-image-safety{
-    width: 27.7%; 
-    padding-top: 51px;
-    padding-right: 20px;
-}
-.box-video-efficiency{/*efficiency*/
-    width: 69.15%;
-    background-image: url("images/pg-panel-solar/Inverter_V8_D\ \(1\).avif");
-    background-position: center;
-    background-size: cover;
-    
-}
-.experience{/*Experience*/
-    background-image: url("images/pg-panel-solar/SP-tesla-app-D.jfif");
-    height: 404px;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-}
-.div-image-specs{
-    background-image: url("images/pg-panel-solar/_25-Specs-D.jfif");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 51%;
-   
 }
 
-.box-button-div-safety{
-    display: flex;
-    gap: 11px;
-    width: 360px;
-    margin-top: 10.4em;
-    width: 100%;
-}
-.div-learn-more{
-    display: flex;
-    width: 132px;
-    height: 40px;
-    gap: 4px;
-    align-items: center;
-}
-.div-learn-more p{
-    font-size: 14px;
-}
-.high-impact-protection-image{
-    position: relative;
-    width: 73%;
-    margin-top: 20px;
-    
-}
-.high-impact-protection-image img{
-    width: 62.6%;
-    position: absolute;
-    top: 149px;
-    left: 157px;
-    
-}
-.order-now-div-video{
-    border: 3px solid #171A20;
-    background-color: transparent;
-    color: #171A20;
-    padding: 4px 24px;
-    font-size: 14px;
-    border-radius: 3px;
-    height: 40px;
-    width: 204px;
-    cursor: pointer;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-}
-.order-now-div-video:hover{
-    color: white;
-   background-color: #171A20;
-}
-.find-my-route-div-video{
-    border: 3px solid black;
-    background-color: transparent;
-    color: #171A20;
-    font-size: 20px;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.find-my-route-div-video:hover{
-    background-color: #171A20;
-    color: white;
-}
-.section-third-img{/*Terceira Sessão*/
-    position: relative;
-    background-image: url("images/pg-model-3/Model-3-Performance-Hero-Desktop-LHD.jfif");
-    height: 405px;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 15.62em;
-}
-.box-car-profile-2{
+.box-learn-more{
     display: flex;
     width: 100%;
-    padding-left: 326px;
-    gap: 200px;
-}
-.car-profile{
-    color: white;
-}
-.car-profile h2{
-    font-size: 28px;
-    font-weight: 540;
-}
-.beyond-ludicrous{
-    display: flex;
-    justify-content: center;
-    padding-top: 56px;
-    padding-bottom: 20px;
-    gap: 5px;
-}
-.beyond-ludicrous div h1{
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-.beyond-ludicrous div{
-    width: 407.328px;
-    margin-bottom: 15px;
-}
-.beyond-ludicrous p{
-    width: 623px;
-    padding-right: 20px;
-}
-.order-now-2{
-    border: 3px solid #171A20;
-    background-color: transparent;
-    color: #171A20;
-    padding: 4px 24px;
-    font-size: 14px;
-    border-radius: 3px;
-    height: 40px;
-    width: 204px;
-    cursor: pointer;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-}
-.order-now-2:hover{
-    color: white;
-   background-color: #171A20;
-}
-.order-now-3{
-    border: 1px solid transparent;
-    background-color: #EEEEEE;
-    color: #171A20;
-    padding: 4px 24px;
-    font-size: 14px;
-    border-radius: 3px;
-    height: 40px;
-    width: 204px;
-    cursor: pointer;
-    letter-spacing: 1.5px;
-}
-.div-sub-section-third{
-    padding-top: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 86px;
-}
-.sub-section-third-1{
-    width: 29.81%;
-}
-.sub-section-third-1 h1{
-    font-size: 28px;
-    color: #171A20;
-}
-.sub-section-third-1 p{
-    font-size: 17px;
-    color: #171A20;
-    margin-bottom: 4px;
-    letter-spacing: 1.2px;
-}
-.sub-section-third-2{
-    width: 40.6%;
-}
-.box-car-profile-model-3{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-}
-.car-profile-model-3{
-    color: white;
-    text-align: center;
-    width: 16.5em;
-}
-.car-profile-model-3 h2{
-    font-size: 28px;
-    font-weight: bolder;
-    margin-bottom: 7px;
-}
-.car-profile-model-3 p{
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-.box-button-section-third{
-    display: flex;
-    gap: 12px;
-    height: 41px;
-    margin-top: 20px;
-}
-.learn-more-2{
-    display: flex;
     align-items: center;
     gap: 6px;
 }
-.learn-more-2 p{
+.box-learn-more p{
     color: #171A20;
     font-size: 14px;
 }
@@ -534,321 +62,67 @@ aside a:hover{
     background-color: #171A20;
     color: white;
 }
-.btn-order-now-section-third{
-    border: 3px solid #171A20;
-    background-color: transparent;
-    color: #171A20;
-    padding: 4px 24px;
-    font-size: 14px;
-    border-radius: 3px;
-    height: 40px;
-    width: 204px;
-    cursor: pointer;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-}
-.btn-order-now-section-third:hover{
-    color: white;
-    background-color: #171A20;
-}
 
-.box-car-profile-all-wheel-drive{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 25px;
-}
-.div-sub-all-wheel-drive{
-    padding-top: 44px;
-    padding-left: 156px;
-    display: flex;
-    gap: 76px;
-}
-.sub-all-wheel-drive-1{
-    width: 29.81%;
-}
-.sub-all-wheel-drive-1 h1{
-    font-size: 28px;
-    color: #171A20;
-    letter-spacing: 1px;
-}
-.sub-all-wheel-drive-1 p{
-    font-size: 17px;
-    color: #171A20;
-    margin-bottom: 4px;
-    letter-spacing: 1.2px;
-}
-.sub-all-wheel-drive-2{
-    width: 54%;
-    letter-spacing: 1px;
-}
-.box-button-all-wheel-drive{
-    display: flex;
-    gap: 17px;
-    flex-direction: column;
-    margin-top: 22px;
-}
-.btn-order-now-all-wheel-drive-1{
-    border: 3px solid #171A20;
-    background-color: transparent;
-    color: #171A20;
-    padding: 4px 24px;
-    font-size: 14px;
-    border-radius: 3px;
-    height: 40px;
-    width: 204px;
-    cursor: pointer;
-    letter-spacing: 1.5px;
-}
-.btn-order-now-all-wheel-drive-1:hover{
-    color: white;
-    background-color: #171A20;
-}
-.btn-order-now-all-wheel-drive-2{
-    border: 1px solid transparent;
-    background-color: #EEEEEE;
-    color: #171A20;
-    padding: 4px 24px;
-    font-size: 14px;
-    border-radius: 3px;
-    height: 40px;
-    width: 204px;
-    cursor: pointer;
-    letter-spacing: 1.5px;
-}
-.box-background-img-range{/*Range*/
-    display: flex;
-    height: 100vh;
-}
-.background-image{
-    position: relative;
-    width: 69.54%;
-    background-image: url("images/pg-model-3/range-model-3.jfif");
+.powerwall-image{/*powerwall*/
+    background-image: url("images/pg-panel-solar/PW-Inverter-Hero-D.jfif");
+    height: 60vh;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
-.background-image img{
-    width: 100%;
+.power-on{/*power On*/
+    height: 65vh;
+    overflow-y: hidden;
 }
-
-.box-car-profile-range div{
-    color: white;
-    width: 30%;
-    text-align: center;
-    font-weight: 500;
-}
-.box-car-profile-range div h2{
-    font-size: 28px;
-}
-.box-car-profile-range div p{
-    font-size: 13px;
-    padding-top: 8px;
-}
-.tex-image-range{
-    position: relative;
-    width: 30.45%;
-    padding: 0 40px;
-}
-.seta-text-image-range{
-    height: 30px;
-    width: 18px;
-    position: absolute;
-    left: 90.7%;
-    padding-top: 13px;
-}
-.seta-text-image-range img{
-    height: 11px;
-    width: 100%;
-}
-.tex-image-range h4{
-    font-size: 17px;
-    font-weight: lighter;
-    margin-top: 52px;
- }
-.tex-image-range h1{
-    margin-top: 3px;
-    margin-bottom: 24px;
-    letter-spacing: 1px;
-    font-size: 28px;
-}
-.tex-image-range p{
-    font-size: 14px;
-    line-height: 20px;
-}
-
-
-.div-cameras-with-sense-1{
-    background-image: url("images/pg-model-s/Autopilot-Hero-Vision-Desktop.jfif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 64.8vh;
-    padding-top: 32px;
-    padding-left: 65px;
-    margin-bottom: 43px;
-}
-.cameras-with-sense{
-    width: 100%;
-}
-.div-text-camearas-with-sense{
-    height: 100%;
-    width: 23%;
-    
-}
-.div-text-camearas-with-sense div{
-    margin-bottom: 45px;
-}
-.div-text-camearas-with-sense div h1{
-    font-size: 28px;
-}
-.div-text-camearas-with-sense div p{
-    font-size: 13px;
-    padding-top: 8px;
-    margin-bottom: 26px;
-}
-.div-sub-auto-pilot{
-    display: flex;
-    padding-left: 157px;
-    gap: 70px;
-   
-   
-}
-.sub-section-auto-pilot-1{
-    width: 29.81%;
-}
-.sub-section-auto-pilot-1 h1{
-    font-size: 28px;
-    letter-spacing: 1px;
-    color: #171A20;
-}
-.sub-section-auto-pilot-1 p{
-    font-size: 17px;
-    color: #171A20;
-    margin-bottom: 4px;
-    letter-spacing: 1.2px;
-}
-.sub-section-auto-pilot-2{
-    width: 48.6%;
-}
-.div-learn-more-auto-pilot{
-    display: flex;
-    width: 150px;
-    height: 40px;
-    gap: 7px;
-    align-items: center;
-}
-
-.div-model-s-specs{/*Specs*/
-    background-color: black;
-    color: white;
-    padding-bottom: 40px;
+.image-efficiency{/*efficiency*/
     height: 100vh;
+    background-image: url("images/pg-panel-solar/Inverter_V8_D\ \(1\).avif");
 }
-.div-flex-model-s-specs{
-    display: flex;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    gap: 3.81em;
+.experience{/*Experience*/
+    background-image: url("images/pg-panel-solar/SP-tesla-app-D.jfif");
+    height: 65vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
 }
-.tables{
-    width: 42%;
+.specs-image-solar-painels{/*Specs*/
+    background-image: url("images/pg-panel-solar/_25-Specs-D.jfif");
 }
-.tables h1{
-    font-size: 28px;
-    padding-bottom: 20px;
-}
-.div-description-model-s-specs{
-    display: flex;
-}
-hr{
-    width: 10%;
-    height: 1px;
-    margin-top: 18px;
-    margin-bottom: 14px;
-}
-.table-model-s-plaid{
-    width: 41.4%;
-}
-.table-model-s{
-    width: 41.4%;
-}
-.table-model-s-plaid p{
-    line-height: 22px;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-.table-model-s p{
-    line-height: 22px;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-.btn-model-s-plaid{
-    font-size: 12px;
-    border-radius: 4px;
-    width: 228.609px;
-    height: 32px;
-    border: 3px solid white;
-    background-color: transparent;
-    padding: 4px 24px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-.btn-model-s{
-    font-size: 12px;
-    border-radius: 4px;
-    width: 228.609px;
-    height: 32px;
-    border: 3px solid #222222;
-    background-color: transparent;
-    padding: 4px 24px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-.div-btn-model-s-specs{
-    text-align: center;
-}
+
 footer{/*Footer*/
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5vh;
     height: 100vh;
     background-color: black;
 }
 .box-transform-your-roof{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
     text-align: center;
-    width: 407px;
-    margin-top: 120px;
-    margin-bottom: 210px;
 }
 .box-transform-your-roof h1{
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
+}
+.btn-footer{
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 2vh;
 }
 .btn-footer-1{
-    width: 244px;
     border: 3px solid white;
-    font-size: 14px;
-    height: 40px;
-    padding: 4px 24px;
     background-color: black;
-    cursor: pointer;
-    border-radius: 3px;
-    margin-top: 17px;
 }
 .btn-footer-2{
-    width: 244px;
     border: 3px solid transparent;
-    font-size: 14px;
-    height: 40px;
     background-color: #393C41;
-    padding: 4px 24px;
-    cursor: pointer;
-    border-radius: 3px;
-    margin-top: 25px;
-    margin-bottom: 17px;
 }
 .btn-footer-1:hover{
     background-color: white;
@@ -857,14 +131,25 @@ footer{/*Footer*/
 .btn-footer-2:hover{
     background-color: #A2A3A6;
 }
-.list-footer{
-    display: flex;
-    list-style: none;
-    gap: 22px;
-    color: #171A20;
-    font-size: 13px;
-    letter-spacing: 0.6px;
-    color: #5C5E62;
+
+@media (max-width:1200px){
+    .manual-navigation{
+        display: none;
+    }
+    html{
+        overflow-y: scroll;
+    }
+    .image-flex-column{
+        flex-direction: column-reverse;
+    }
+    .power-on{
+        height: 33vh;
+    }
+}
+@media (max-width: 425px){
+    .main-title-box h1{
+        font-size: 2rem;
+    }
 }
 
 

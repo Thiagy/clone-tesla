@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon/tesla.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="tesla.css">
     <link rel="stylesheet" href="solarpanels.css">
     <title>Solar Panels | Tesla</title>
 </head>
@@ -13,17 +14,17 @@
         <a href="index.html" class="logo">
             TESLA
         </a>
-        <nav class="menu-principal">
-            <a href="modes.html">Model S</a>
-            <a href="mode3.html">Model 3</a>
+        <nav class="main-menu">
+            <a href="models.html">Model S</a>
+            <a href="model3.html">Model 3</a>
             <a href="modelx.html">Model X</a>
             <a href="modely.html">Model Y</a>
             <a href="solaroof.html">Solar Roof</a>
             <a href="solarpanels.html">Solar Panels</a>
         </nav>
         <nav class="shop-account-menu">
-            <a href="">Shop</a>
-            <a href="">Account</a>
+            <a href="" id="shop">Shop</a>
+            <a href="" id="account">Account</a>
             <a href="#" onclick="openMenu()">Menu</a>
         </nav>
     </header>
@@ -48,18 +49,16 @@
         <a href="">United States English</a>
     </aside>
     <main>
-        <section id="section-1" class="section-pricipal">
-            <a href="#section-1" class="seta-up">
-            </a>
-            <div class="content">
-                <div class="text">
+        <section id="section-1" class="main-div div-main-image">
+            <div class="main-content">
+                <div class="main-title-box">
                     <h1>Solar for Existing Roofs</h1>
-                    <p>Lowest Cost Solar Panels in America—Money-back guarantee</p>
+                    <p href="">Schedule a Virtual Consultation</p>
                 </div>
-                <div class="box-car-profile">
+                <div class="car-profile-box">
                     <div class="car-profile">
                         <img src="images/pg-panel-roof/teto-solar-image.png" alt="">
-                        <p>Convert Sunlight</p>
+                        <p>Convert Sunligh</p>
                         <p>to Energy</p>
                     </div>
                     <div class="car-profile">
@@ -72,18 +71,14 @@
                         <p>Energy</p>
                         <p>Monitoring</p>
                     </div>
-                    <button class="order-now">Order Now</button>
+                    <button class="btn-border-white">Order Now</button>
                     <div class="bate-papo">
                         <img src="images/pg-model-s/bate-papo.png" alt="">
                     </div>
                 </div>
-                <a href="#section-2" class="seta-down">
-                </a>
-            </div>
-            <div class="linear-gradient-1">
             </div>
         </section>
-        <div class="navigation">
+        <div class="manual-navigation">
             <div style="display: flex; margin-bottom: 10px; align-items: center;gap: 4px;">
                 <a href="#section-1" class="block-white"></a>
                 <a href="#section-1" class="text-block-white">SOLAR PANELS</a>
@@ -121,160 +116,164 @@
                 <a href="#section-9" class="text-block-white">ORDER</a>
             </div>
         </div>
-        <section id="section-2" class="box-background-img-range"><!--Savings-->
-            <div class="tex-image-range">
-                <h4>Savings</h4>
-                <h1>Electricity For Less</h1>
-                <p>
-                    Use solar energy to power your home and reduce your dependence on the grid. Purchase solar at the lowest price of any national provider with Tesla's price match guarantee and take control of your monthly electricity bill. Schedule a virtual consultation with an Energy Advisor to learn more.
-                </p>
-                <div class="box-button-div-savings">
-                    <button class="order-now-div-video">See Your Savings</button>
+        <section id="section-2" class="div-flex image-flex-column"><!--Savings-->
+            <div class="tex-div-flex">
+                <div>
+                    <h4>Savings</h4>
+                    <h1>Electricity For Less</h1>
+                    <p>
+                        Use solar energy to power your home and reduce your dependence on the grid. Purchase solar at the lowest price of any national provider with Tesla's price match guarantee and take control of your monthly electricity bill. Schedule a virtual consultation with an Energy Advisor to learn more.
+                    </p>
+                </div>
+                <div class="div-flex-button">
+                    <button class="btn-order-now-flex">See Your Savings</button>
                 </div>
             </div>
-            <div class="box-video-savings">
-                   <video src="video-pg-solar-panels/YTNWIZ_425_Savings_D-2000_NVNAJS.mp4" autoplay loop></video>
+            <div class="range-image">
+                <video class="video-range" src="video-pg-solar-panels/YTNWIZ_425_Savings_D-2000_NVNAJS.mp4" autoplay loop></video>
             </div>
         </section>
-        <section id="section-3" class="box-background-img-range"><!--Design-->
-            <div class="tex-image-range">
-                <h4>Design</h4>
-                <h1>Sleek and Durable</h1>
-                <p>
-                    Our solar panels are low-profile and durable — quietly converting sunlight to energy for decades to come. Integrated hardware and simple design achieve this by securing the panels close to your roof and to each other for a minimalist aesthetic. Schedule a virtual consultation with an Energy Advisor to learn more.
-                </p>
-                <div class="box-button-design">
-                    <div class="learn-more-2">
-                        <button class="learn-button">+</button>
+        <section id="section-3" class="div-flex image-flex-column"><!--Design-->
+            <div class="tex-div-flex">
+                <div class="box-title-flex">
+                    <h4>Design</h4>
+                    <h1>Sleek and Durable</h1>
+                    <p>
+                        Our solar panels are low-profile and durable — quietly converting sunlight to energy for decades to come. Integrated hardware and simple design achieve this by securing the panels close to your roof and to each other for a minimalist aesthetic. Schedule a virtual consultation with an Energy Advisor to learn more.
+                    </p>
+                </div>
+                <div class="div-flex-button">
+                    <div class="box-learn-more">
+                        <a href="#" class="learn-button">+</a>
                         <p>Learn More</p>
                     </div>
-                    <button class="btn-order-now-section-third">Order Now</button>
+                    <a href="#" ><button class="btn-border-black">Order Now</button></a>
                 </div>
             </div>
-            <div class="box-video-design">
+            <div class="range-image design-image">
             </div>
         </section>
-        <section id="section-4" style="height: 100vh;"><!--Powerwall-->
-            <div class="powerwall">
-            </div>
-            <div class="div-sub-all-wheel-drive">
-                <div class="sub-all-wheel-drive-1">
+        <section id="section-4"><!--Powerwall-->
+            <div class="powerwall-image"></div>
+            <div class="box-title-text">
+                <div class="box-title">
                     <p>Powerwall</p>
                     <h1>Home Battery Backup</h1>
-                    <div class="box-button-all-wheel-drive">
-                        <button class="btn-order-now-all-wheel-drive-1">Order Now</button>
-                        <button class="btn-order-now-all-wheel-drive-2">Learn More</button>
+                    <div class="div-button">
+                        <button class="btn-border-black">Order Now</button>
+                        <button class="btn-border-transparent">Learn More</button>
                     </div>
                 </div>
-                <p class="sub-all-wheel-drive-2">
+                <p class="box-text">
                     Your Powerwall can be bundled with solar, allowing you to generate clean energy and store it for use anytime—at night or during an outage.
                 </p>
             </div>
         </section>
-        <section id="section-5" style="height: 100vh;"><!--Power On-->
+        <section id="section-5" ><!--Power On-->
             <div class="power-on">
-                <video src="video-pg-solar-panels/solar-assessment-desktop.mp4" autoplay loop></video>
+                <video class="video-range" src="video-pg-solar-panels/solar-assessment-desktop.mp4" autoplay loop></video>
             </div>
-            <div class="div-sub-all-wheel-drive">
-                <div class="sub-all-wheel-drive-1">
+            <div class="box-title-text">
+                <div class="box-title">
                     <p>Power On</p>
                     <h1>Order and Installation</h1>
-                    <div class="box-button-all-wheel-drive">
-                        <button class="btn-order-now-all-wheel-drive-1">Order Now</button>
+                    <div class="div-button">
+                        <button class="btn-border-black">Order Now</button>
                     </div>
                 </div>
-                <p class="sub-all-wheel-drive-2">
-                    From permitting to powering on, we’ll take care of everything. After you order, we’ll gather remote aerial imagery of your home, design your system, take care of any necessary permits and schedule your installation. Chat with an Energy Advisor or request a call to learn more.
+                <p class="box-text">
+                    From permitting to powering on, we'll take care of everything. After you order, we'll gather remote aerial imagery of your home, design your system, take care of any necessary permits and schedule your installation. Chat with an Energy Advisor or request a call to learn more.
                 </p>
             </div>
         </section>
-        <section id="section-6" class="box-background-img-range"><!--Efficiency-->
-            <div class="tex-image-range">
-                <h4>Efficiency</h4>
-                <h1>Maximum Solar Production</h1>
-                <p>
-                    Tesla solar panels are designed to be highly efficient, delivering maximum solar production year-round, even on roofs with complicated angles. Powered by Tesla Solar Inverter, your fully integrated system is safe and reliable.
-                </p>
-                <div class="box-button-div-savings">
-                    <button class="order-now-div-video">Order Now</button>
+        <section id="section-6" class="div-flex image-flex-column"><!--Efficiency-->
+            <div class="tex-div-flex">
+                <div>
+                    <h4>Efficiency</h4>
+                    <h1>Maximum Solar Production</h1>
+                    <p>
+                        Tesla solar panels are designed to be highly efficient, delivering maximum solar production year-round, even on roofs with complicated angles. Powered by Tesla Solar Inverter, your fully integrated system is safe and reliable.
+                    </p>
+                </div>
+                <div class="div-flex-button">
+                    <button class="btn-border-black">Order Now</button>
                 </div>
             </div>
-            <div class="box-video-efficiency">
-            </div>
+            <div class="range-image image-efficiency"></div>
         </section>
-        <section id="section-7" style="height: 100vh;"><!--Experience-->
+        <section id="section-7"><!--Experience-->
             <div class="experience">
             </div>
-            <div class="div-sub-all-wheel-drive">
-                <div class="sub-all-wheel-drive-1">
+            <div class="box-title-text">
+                <div class="box-title">
                     <p>Experience</p>
                     <h1>24/7 Monitoring</h1>
-                    <div class="box-button-all-wheel-drive">
-                        <button class="btn-order-now-all-wheel-drive-1">Order Now</button>
+                    <div class="div-button">
+                        <button class="btn-border-black">Order Now</button>
                     </div>
                 </div>
-                <p class="sub-all-wheel-drive-2">
+                <p class="box-text">
                     Manage your solar system from anywhere in the world with 24/7 mobile monitoring. Watch your energy in real time or set your preferences to optimize for energy independence.
                 </p>
             </div>
         </section>
-        <section id="section-8" class="div-model-s-specs"><!--Specs-->
-            <div class="div-flex-model-s-specs">
-                <div class="div-image-specs">
-                </div>
+        <section id="section-8" class="div-model-s-specs"><!--div specs-->
+            <div class="div-flex">
+                <div class="div-image-model-s-specs specs-image-solar-painels"></div>
                 <div class="tables">
-                    <h1>Solar Panel Specs</h1>
+                    <h1>Model S Specs</h1>
                     <div class="div-description-model-s-specs">
-                        <div class="table-model-s-plaid">
+                        <div class="table-model-s">
+                            <button class="btn-model-s-plaid">Model s plaid</button>
+                            <p>Range (EPA est.)</p>
+                            <p class="spacing">396 mi</p>
                             <hr>
-                            <p>Wattage</p>
-                            <p>400 W</p>
+                            <p>1/4 Mile</p>
+                            <p class="spacing">9.23@155 mph trap speed</p>
                             <hr>
-                            <p>Operating Temperature</p>
-                            <p>-40°F up to +185°F</p>
+                            <p>Peak Power</p>
+                            <p class="spacing">1,020 hp</p>
                             <hr>
-                            <p>Dimensions</p>
-                            <p>74.4" x 41.2" x 1.57"</p>
-                            <p>(including frame)</p>
+                            <p>Wheels</p>
+                            <p class="spacing">19" or 21"</p>
                             <hr>
-                            <p>Design</p>
-                            <p>Black anodized aluminum alloy frame</p>
-                            <p>Black solar cells and backsheet</p>
+                            <p>Cargo</p>
+                            <p class="spacing">28 cu ft</p>
                             <hr>
-                            <p>Warranty</p>
-                            <p>25-year</p>
-                            <p>performance guarantee</p>
-                            <hr>
+                            <p>Weight</p>
+                            <p class="spacing">4,766 lbs</p>
                         </div>
                         <div class="table-model-s">
+                            <button class="btn-model-s">Model s</button>
+                            <p>*Acceleration</p>
+                            <p class="spacing">1.99 s 0-60 mph with rollout subtracted</p>
                             <hr>
-                            <p>Certifications</p>
-                            <p> IEC / UL 61730,</p>
-                            <p>CEC Listed,</p>
-                            <p>IEC 61215</p>
+                            <p>†Top Speed</p>
+                            <p class="spacing">200 mph when equipped with paid hardware upgrades</p>
                             <hr>
-                            <p>Inverter Power</p>
-                            <p> 3.8kW / 7.6kW</p>
-                            <p>97.5% efficiency</p>
+                            <p>Drag Coefficient</p>
+                            <p class="spacing">0.208 Cd</p>
                             <hr>
-                            <p>Inverter Dimensions</p>
-                            <p>26" x 16" x 6"</p>
+                            <p>Powertrain</p>
+                            <p class="spacing">Tri Motor</p>
                             <hr>
-                            <p>Inverter Warranty</p>
-                            <p>12.5 years</p>
-                            <hr>
+                            <p>Supercharging Max</p>
+                            <p>250 kW</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="div-btn-model-s-specs" style="padding: 5vh;">
+                <button class="btn-border-white">Compare</button>
+            </div>
         </section>
         <footer id="section-9">
             <div class="box-transform-your-roof">
-                <h1>Power Your Home</h1>
-                <p>Order now or talk to a Tesla Advisor if you have any questionson</p>
-                <button class="btn-footer-1">Order Now</button><br>
-                <button class="btn-footer-2">Chat with Energy Advisor</button><br>
-                <a href="" style="text-decoration: underline;">Get Energy Updates</a>
+                <h1>Transform Your Roof</h1>
+                <p>Order now or chat with an Energy Advisor for more information</p>
+                <button class="btn-footer-1 btn-footer">Order Now</button>
+                <button class="btn-footer-2 btn-footer">Chat with Energy Advisor</button>
+                <a href="#" style="text-decoration: underline;">Get Updates</a>
             </div>
             <ul class="list-footer">
                 <li>

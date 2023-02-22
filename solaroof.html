@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon/tesla.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="tesla.css">
     <link rel="stylesheet" href="solaroof.css">
     <title>Solar Roof | Tesla</title>
 </head>
 <body>
-    <header>
+    <header style="color: white;">
         <a href="index.html" class="logo">
             TESLA
         </a>
-        <nav class="menu-principal">
-            <a href="modes.html">Model S</a>
+        <nav class="main-menu">
+            <a href="models.html">Model S</a>
             <a href="mode3.html">Model 3</a>
             <a href="modelx.html">Model X</a>
             <a href="modely.html">Model Y</a>
@@ -22,8 +23,8 @@
             <a href="solarpanels.html">Solar Panels</a>
         </nav>
         <nav class="shop-account-menu">
-            <a href="">Shop</a>
-            <a href="">Account</a>
+            <a href="" id="shop">Shop</a>
+            <a href="" id="account">Account</a>
             <a href="#" onclick="openMenu()">Menu</a>
         </nav>
     </header>
@@ -48,13 +49,13 @@
         <a href="">United States English</a>
     </aside>
     <main>
-        <section class="section-pricipal-solar-roof">
-            <div class="content">
-                <div class="text">
+        <section id="section-1" class="main-div div-main-image">
+            <div class="main-content">
+                <div class="main-title-box">
                     <h1>Solar Roof</h1>
-                    <p>Transform your roof and produce clean energy</p>
+                    <p href="">Schedule a Virtual Consultation</p>
                 </div>
-                <div class="box-car-profile">
+                <div class="car-profile-box">
                     <div class="car-profile">
                         <img src="images/pg-panel-roof/teto-solar-image.png" alt="">
                         <p>Beautiful</p>
@@ -70,189 +71,197 @@
                         <p>Outage</p>
                         <p>Protection</p>
                     </div>
-                    <button class="order-now">Order Now</button>
+                    <button class="btn-border-white">Order Now</button>
                     <div class="bate-papo">
                         <img src="images/pg-model-s/bate-papo.png" alt="">
                     </div>
                 </div>
-                <a href="#section-2" class="seta-down">
-                </a>
             </div>
-
         </section>
-        <section id="section-2" style="height: 100vh;">
-            <div class="section-third-img">
-            </div>
-            <div class="div-sub-section-third">
-                <div class="sub-section-third-1">
+        <section id="section-2"><!--div design-->
+            <div class="design-image"></div>
+            <div class="box-title-text">
+                <div class="box-title">
                     <p>Design</p>
                     <h1>Complement Your Home's Aesthetic</h1>
-                    <div class="box-button-section-third">
-                        <button class="btn-order-now-section-third-1">Order Now</button>
+                    <div class="div-button">
+                        <button class="btn-border-black">Order Now</button>
                     </div>
                 </div>
-                <p class="sub-section-third-2">
+                <p class="box-text">
                     Install Solar Roof and power your home with a fully integrated solar and energy storage system. The glass solar tiles and steel roofing tiles look great up close and from the street, complementing your home's natural styling. Schedule a virtual consultation with an Energy Advisor to learn more.
                 </p>
             </div>
         </section>
-        <section class="box-background-video-energy-storage"><!--Energy-Storage-->
-            <div class="tex-video-energy-storage">
-                <h4>Energy Storage</h4>
-                <h1>Protection Against Outages</h1>
-                <p>
-                    Powerwall is a compact home battery that is bundled with Solar Roof, providing you with 24/7 energy security. It stores the energy you produce with Solar Roof so you can power your home anytime—at night or during an outage.
-                </p>
-                <div class="box-button-div-video-range">
-                    <button class="order-now-div-video-range">Order Now</button>
-                    <button class="find-my-route-div-video-range">Learn More</button>
+        <section class="div-flex image-flex-column"><!--div Energy-Storage-->
+            <div class="tex-div-flex">
+                <div>
+                    <h4>Energy Storage</h4>
+                    <h1>Protection Against Outages</h1>
+                    <p>
+                        Powerwall is a compact home battery that is bundled with Solar Roof, providing you with 24/7 energy security. It stores the energy you produce with Solar Roof so you can power your home anytime—at night or during an outage.
+                    </p>
+                </div>
+                <div class="div-flex-button">
+                    <button class="btn-order-now-flex">Order Now</button>
+                    <button class="btn-second-flex">Learn More</button>
                 </div>
             </div>
-            <div class="background-video-energy-storage">
-            </div>
+            <div class="range-image energy-storage-image"></div>
         </section>
-        <section class="box-background-video-energy-storage"><!--Durability-->
-            <div class="durability-video">
-                <video autoplay loop controls>
-                    <source src="video-pg-panel-roof/SR-Durability-Desktop.webm" type="">
-                </video>
+        <section class="div-flex"><!--div Durability-->
+            <div class="range-image">
+                <video class="video-range" src="video-pg-panel-roof/SR-Durability-Desktop.webm" autoplay loop></video>
             </div>
-            <div class="tex-video-energy-storage">
-                <h4>Durability</h4>
-                <h1>Take on the Elements</h1>
-                <p>
-                    Solar Roof is comprised of both glass solar tiles and steel roofing tiles. Glass solar tiles produce energy, while architectural-grade steel tiles add longevity and corrosion resistance to your roof. Both are durable, strong and engineered for all-weather protection. With a 25-year warranty, Solar Roof will continue to produce clean energy and protect your home for decades to come.
-                </p>
-                <div class="box-button-div-video-range">
-                    <button class="order-now-div-video-durability">Order Now</button>
+            <div class="tex-div-flex">
+                <div>
+                    <h4>Durability</h4>
+                    <h1>Take on the Elements</h1>
+                    <p>
+                        Solar Roof is comprised of both glass solar tiles and steel roofing tiles. Glass solar tiles produce energy, while architectural-grade steel tiles add longevity and corrosion resistance to your roof. Both are durable, strong and engineered for all-weather protection. With a 25-year warranty, Solar Roof will continue to produce clean energy and protect your home for decades to come.
+                    </p>
+                </div>
+                <div class="div-flex-button">
+                    <button class="btn-border-black">Order Now</button>
                 </div>
             </div>
         </section>
-        <section class="div-design-installation-power-on"><!--design-installation-power-on-->
-            <div class="div-sub-section-third">
-                <div class="sub-section-third-1">
+        <section class="div-electric-powertrain"><!--div design-installation-power-on-->
+            <div class="box-title-text">
+                <div class="box-title">
                     <p>Design</p>
                     <h1>Complement Your Home's Aesthetic</h1>
-                    <div class="box-button-section-third">
-                        <button class="btn-order-now-section-third-1">Order Now</button>
+                    <div class="div-button">
+                        <button class="btn-border-black">Order Now</button>
                     </div>
                 </div>
-                <p class="sub-section-third-2">
+                <p class="box-text">
                     Install Solar Roof and power your home with a fully integrated solar and energy storage system. The glass solar tiles and steel roofing tiles look great up close and from the street, complementing your home's natural styling. Schedule a virtual consultation with an Energy Advisor to learn more.
                 </p>
             </div>
-            <div class="box-video-design-installation-power-on">
-                <video src="video-pg-panel-roof/Carousel_Design.webm" autoplay loop class="video-design-installation-power-on-first"></video>
-                <video src="video-pg-panel-roof/Carousel_Installation2.webm" autoplay loop class="video-design-installation-power-on"></video>
-                <video src="video-pg-panel-roof/WLCRZE_Carousel_PowerOn_V4_IDHKAS.mp4" autoplay loop class="video-design-installation-power-on"></video>
-            </div>
-            <div class="box-navigation-manual">
-                <div class="navigation-first" onclick="videosSlide1()">
+            <video src="video-pg-panel-roof/Carousel_Design.webm" autoplay loop class="video-design-installation-power-on-first box-video-design-installation-power-on"></video>
+            <video src="video-pg-panel-roof/Carousel_Installation2.webm" autoplay loop class="video-design-installation-power-on box-video-design-installation-power-on"></video>
+            <video src="video-pg-panel-roof/WLCRZE_Carousel_PowerOn_V4_IDHKAS.mp4" autoplay loop class="video-design-installation-power-on box-video-design-installation-power-on"></video>
+            <div class="box-navigation-manual box-slide">
+                <div class="navigation-first nav-bar-video car-attribute" onclick="videosSlide1()">
                     <div class="black-line-first"></div>
                     <h2>Design</h2>
                     <p>Aerial imagery and 3D modeling determine your custom design</p>
                 </div>
-                <div class="navigation" onclick="videosSlide2()">
+                <div class="navigations nav-bar-video car-attribute" onclick="videosSlide2()">
                     <div class="black-line"></div>
                     <h2>Installation</h2>
                     <p>Our integrated design enables quick tile and Powerwall installation</p>
                 </div>
-                <div class="navigation" onclick="videosSlide3()">
+                <div class="navigations nav-bar-video car-attribute" onclick="videosSlide3()">
                     <div class="black-line"></div>
                     <h2>Power On</h2>
                     <p>Final cleanup is completed before system activation</p>
                 </div>
             </div>
         </section>
-        <section class="box-eficiency"><!--Efficiency-->
-            <div class="tex-image-eficiency">
-                <h4>Efficiency</h4>
-                <h1>Maximum Solar Production</h1>
-                <p>
-                    Generate the most energy possible, even on roofs with complicated angles and intermittent sunlight. Glass solar tiles and architectural-grade steel tiles, vent covers and ridge caps come together to form a roof that is both durable and powerful. With Tesla Solar Inverter, your fully integrated system is safe, reliable and outage ready. And built-in connectivity ensures Tesla Solar Inverter continues to improve with each over-the-air software update.
-                </p>
-                <div class="box-button-eficiency">
-                    <button class="order-now-div-video-durability">Order Now</button>
+        <section class="div-flex image-flex-column"><!--div Efficiency-->
+            <div class="tex-div-flex">
+                <div>
+                    <h4>Efficiency</h4>
+                    <h1>Maximum Solar Production</h1>
+                    <p>
+                        Generate the most energy possible, even on roofs with complicated angles and intermittent sunlight. Glass solar tiles and architectural-grade steel tiles, vent covers and ridge caps come together to form a roof that is both durable and powerful. With Tesla Solar Inverter, your fully integrated system is safe, reliable and outage ready. And built-in connectivity ensures Tesla Solar Inverter continues to improve with each over-the-air software update.
+                    </p>
+                </div>
+                <div class="div-flex-button">
+                    <button class="btn-border-black">Order Now</button>
                 </div>
             </div>
-            <div class="eficiency-image">
-            </div>
+            <div class="range-image eficiency-image"></div>
         </section>
-        <section class="box-Control"><!--Control-->
-            <div class="control-image">
-            </div>
-            <div class="div-sub-section-third">
-                <div class="sub-section-third-1">
+        <section><!--div Control-->
+            <div class="control-image"></div>
+            <div class="box-title-text">
+                <div class="box-title">
                     <p>Control</p>
                     <h1>Monitor and Optimize</h1>
-                    <div class="box-button-section-third">
-                        <button class="btn-order-now-section-third-1">Order Now</button>
+                    <div class="div-button">
+                        <button class="btn-border-black">Order Now</button>
                     </div>
                 </div>
-                <p class="sub-section-third-2">
+                <p class="box-text">
                     With the Tesla app, you can monitor your energy production in real time. Control your system from anywhere with instant alerts and remote access.
                 </p>
             </div>
         </section>
-        <section class="box-background-video-energy-storage"><!--Value-->
-            <div class="tex-video-energy-storage">
-                <h4>Value</h4>
-                <h1>Pay Less for Electricity</h1>
-                <p>
-                    Solar Roof helps pay for itself with the energy it produces. As a fully integrated system, Solar Roof can maximize your solar generation and help you take control of your monthly electricity bill.
-                </p>
-                <div class="box-button-value">
-                    <button class="order-now-div-video-durability">Order Now</button>
+        <section class="div-flex image-flex-column"><!--div Value-->
+            <div class="tex-div-flex">
+                <div>
+                    <h4>Value</h4>
+                    <h1>Pay Less for Electricity</h1>
+                    <p>
+                        Solar Roof helps pay for itself with the energy it produces. As a fully integrated system, Solar Roof can maximize your solar generation and help you take control of your monthly electricity bill.
+                    </p>
+                </div>
+                <div class="div-flex-button">
+                    <button class="btn-border-black">Order Now</button>
                 </div>
             </div>
-            <div class="background-video-value">
-            </div>
+            <div class="range-image value-image"></div>
         </section>
-        <section class="specs">
-            <div class="specs-image">
-            </div>
-            <div class="box-tables">
-                <h1>Solar Roof Specs</h1>
-                <div class="table-specs">
-                    <div class="tables">
-                        <hr>
-                        <p>Tile and Power Warranty</p>
-                        <p>25 years</p>
-                        <hr>
-                        <p>Solar Glass Tiles</p>
-                        <p>72 W</p>
-                        <hr>
-                        <p>Steel Tiles</p>
-                        <p>Corrosion and weather</p>
-                        <p>resistant</p>
-                        <hr>
-                        <p>Wind Rating</p>
-                        <p>Class F (highest rating)</p>
-                    </div>
-                    <div class="tables">
-                        <hr>
-                        <p>Fire Rating</p>
-                        <p>Class A (highest rating)</p>
-                        <hr>
-                        <p>Hail Rating</p>
-                        <p>Class 3</p>
-                        <hr>
-                        <p>Fire Rating</p>
-                        <p>Class A (highest rating)</p>
-                        <hr>
-                        <p>Roof Pitch</p>
-                        <p>≥ 2:12</p>
+        <section class="div-model-s-specs"><!--div specs-->
+            <div class="div-flex">
+                <div class="div-image-model-s-specs specs-image-painels-roof"></div>
+                <div class="tables">
+                    <h1>Model S Specs</h1>
+                    <div class="div-description-model-s-specs">
+                        <div class="table-model-s">
+                            <button class="btn-model-s-plaid">Model s plaid</button>
+                            <p>Range (EPA est.)</p>
+                            <p class="spacing">396 mi</p>
+                            <hr>
+                            <p>1/4 Mile</p>
+                            <p class="spacing">9.23@155 mph trap speed</p>
+                            <hr>
+                            <p>Peak Power</p>
+                            <p class="spacing">1,020 hp</p>
+                            <hr>
+                            <p>Wheels</p>
+                            <p class="spacing">19" or 21"</p>
+                            <hr>
+                            <p>Cargo</p>
+                            <p class="spacing">28 cu ft</p>
+                            <hr>
+                            <p>Weight</p>
+                            <p class="spacing">4,766 lbs</p>
+                        </div>
+                        <div class="table-model-s">
+                            <button class="btn-model-s">Model s</button>
+                            <p>*Acceleration</p>
+                            <p class="spacing">1.99 s 0-60 mph with rollout subtracted</p>
+                            <hr>
+                            <p>†Top Speed</p>
+                            <p class="spacing">200 mph when equipped with paid hardware upgrades</p>
+                            <hr>
+                            <p>Drag Coefficient</p>
+                            <p class="spacing">0.208 Cd</p>
+                            <hr>
+                            <p>Powertrain</p>
+                            <p class="spacing">Tri Motor</p>
+                            <hr>
+                            <p>Supercharging Max</p>
+                            <p>250 kW</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="div-btn-model-s-specs" style="padding: 5vh;">
+                <button class="btn-border-white">Compare</button>
             </div>
         </section>
         <footer>
             <div class="box-transform-your-roof">
                 <h1>Transform Your Roof</h1>
                 <p>Order now or chat with an Energy Advisor for more information</p>
-                <button class="btn-footer-1">Order Now</button><br>
-                <button class="btn-footer-2">Chat with Energy Advisor</button><br>
-                <a href="" style="text-decoration: underline;">Get Updates</a>
+                <button class="btn-footer-1 btn-footer">Order Now</button>
+                <button class="btn-footer-2 btn-footer">Chat with Energy Advisor</button>
+                <a href="#" style="text-decoration: underline;">Get Updates</a>
             </div>
             <ul class="list-footer">
                 <li>

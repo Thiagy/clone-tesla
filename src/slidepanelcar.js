@@ -34,7 +34,6 @@ function slide2Auto(){
 
     }else if(manual_slide[1].checked || now<=24){
 
-
         display_car[4].style.display='none'
         option[4].style.backgroundColor='#5C5E62'
         box_text_navigation[4].style.display="none"
