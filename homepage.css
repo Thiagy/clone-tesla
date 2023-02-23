@@ -94,11 +94,11 @@ section{
 }
 
 @media (max-width: 839px){
-    .custom-order{
-        width: 45%;
+    .btn-custom-order{
+        width: 9.875rem;
         padding: 0.75rem 1rem;
     }
-    .existing-inventory{
+    .btn-existing-inventory{
         width: 9.875rem;
         padding: 0.75rem 1rem;
     }
@@ -107,7 +107,7 @@ section{
     .div-button-homepage{
         flex-direction: column;
         align-items: center;
-        width: 91.4%;
+        width: 100%;
     }
     aside{
         width: 60%;
@@ -120,6 +120,29 @@ section{
     }
     .oculto{
         display: none;
+    }
+}
+@media (max-width: 425px){
+    .section-model-3{
+        background-image: url("images/homepage/Homepage-Model-3-LHD-Mobile.jfif");
+    }
+    .section-model-y{
+        background-image: url("images/homepage/Homepage-ModelY-LHD-Mobile.jfif");
+    }
+    .section-model-s{
+        background-image: url("images/homepage/Homepage-Model-S-LHD-Mobile.jfif");
+    }
+    .section-model-x{
+        background-image: url("images/homepage/Homepage-Model-X-LHD-Mobile.jfif");
+    }
+    .section-solar-roof{
+        background-image: url("images/homepage/Homepage-SolarRoof-Mobile.webp");
+    }
+    .section-solar-panels{
+        background-image: url("images/homepage/Homepage-SolarPanels-Mobile.webp");
+    }
+    .section-acessories{
+        background-image: url("images/homepage/Homepage-Accessories-Mobile.webp");
     }
 }
 

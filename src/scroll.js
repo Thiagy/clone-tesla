@@ -103,7 +103,7 @@ function rolar(){
         btn_custom_order.innerHTML='Order Now'
         btn_existing_inventory.innerHTML='Learn More'
     }
-    if(altura > (4.24 * current_window)){
+    if(altura > (4.239 * current_window)){
         content_homepage.style.opacity=0
     }
     if(altura > (4.72 * current_window)){/*Opacity 1 Solar Panels*/
@@ -120,7 +120,7 @@ function rolar(){
         btn_custom_order.innerHTML='Order Now'
         btn_existing_inventory.innerHTML='Learn More'
     }
-    if(altura > (5.232 * current_window)){
+    if(altura > (5.233 * current_window)){
         content_homepage.style.opacity=0
         down_arrow[0].style.opacity=0
 
