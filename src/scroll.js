@@ -13,11 +13,13 @@ function rolar(){
 
     let down_arrow =document.getElementsByClassName("down-arrow")/*down arraw*/
 
-    let altura = document.documentElement.scrollTop
+    let altura = document.documentElement.scrollTop/*distância do top da página*/
 
-    console.log(`Distancia do top: ${altura}`)
+    let current_window = content_homepage.clientHeight/*Altura da div cuja id é content-homepage*/
 
-    if(altura >= 0){
+    console.log(`Tamanho da div: ${current_window}`)
+
+    if(altura >= 0){/*Opacity 1 model 3*/
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=1
 
@@ -32,12 +34,11 @@ function rolar(){
         btn_existing_inventory.innerHTML='Demo Drive'
     
     }
-    if(altura > 150){
+    if(altura > (0.24 * current_window)){
         content_homepage.style.opacity=0
         down_arrow[0].style.opacity=0
-
     }
-    if(altura > 450){
+    if(altura > (0.72 * current_window)){/*Opacity 1 model Y*/
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=0
 
@@ -51,10 +52,10 @@ function rolar(){
         btn_custom_order.innerHTML='Buy Now'
         btn_existing_inventory.innerHTML='Custom Order'
     }
-    if(altura > 773){
+    if(altura > (1.2368 * current_window)){
         content_homepage.style.opacity=0
     }
-    if(altura > 1075){
+    if(altura > (1.72 * current_window)){/*Opacity 1 model S*/
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=0
 
@@ -68,10 +69,10 @@ function rolar(){
         btn_custom_order.innerHTML='Buy Now'
         btn_existing_inventory.innerHTML='View Inventory'
     }
-    if(altura > 1400){
+    if(altura > (2.24 * current_window)){
         content_homepage.style.opacity=0
     }
-    if(altura > 1700){
+    if(altura > (2.72 * current_window)){/*Opacity 1 model X*/
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=0
 
@@ -85,10 +86,10 @@ function rolar(){
         btn_custom_order.innerHTML='Buy Now'
         btn_existing_inventory.innerHTML='View Inventory'
     }
-    if(altura > 2020){
+    if(altura > (3.232 * current_window)){
         content_homepage.style.opacity=0
     }
-    if(altura > 2320){
+    if(altura > (3.72 * current_window)){/*Opacity 1 Solar Roof*/
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=0
 
@@ -102,10 +103,10 @@ function rolar(){
         btn_custom_order.innerHTML='Order Now'
         btn_existing_inventory.innerHTML='Learn More'
     }
-    if(altura > 2650){
+    if(altura > (4.24 * current_window)){
         content_homepage.style.opacity=0
     }
-    if(altura > 2950){
+    if(altura > (4.72 * current_window)){/*Opacity 1 Solar Panels*/
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=0
 
@@ -119,11 +120,11 @@ function rolar(){
         btn_custom_order.innerHTML='Order Now'
         btn_existing_inventory.innerHTML='Learn More'
     }
-    if(altura > 3270){
+    if(altura > (5.232 * current_window)){
         content_homepage.style.opacity=0
         down_arrow[0].style.opacity=0
 
-        text_h1.innerHTML="Model S"
+        text_h1.innerHTML="Solar Panels"
         text_a.innerHTML='Schedule a Test Drive'
         text_a.href='https://www.tesla.com/drive'
 
@@ -134,7 +135,7 @@ function rolar(){
         btn_existing_inventory.innerHTML='Custom Order'
         btn_existing_inventory.style.display='block'
     }
-    if(altura > 3570){
+    if(altura > (5.712 * current_window)){/*Opacity 1 Acessories */
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=0
 
