@@ -98,34 +98,7 @@ section{
     justify-content: center;
     align-items: flex-end;
 }
-@media (max-width: 1200px){
-    header{
-        justify-content: space-between;
-    }
-    .menu-principal{
-        display: none;
-    }
-    #shop{
-        display: none;
-    }
-    #account{
-        display: none;
-    }
-    .shop-account-menu{
-        justify-content: flex-end;
-        margin-right: 5px;
-    }
-    .shop-account-menu a{
-        background-color: rgba(186, 204, 217, 0.3);
-        backdrop-filter: blur(10px);
-    }
-    .shop-account-menu a:hover{
-        background-color: #BBC7D2;
-    }
-    .content{
-        padding-bottom: 2.5vh;
-    }
-}
+
 @media (max-width: 839px){
     .custom-order{
         width: 9.875rem;
@@ -134,9 +107,6 @@ section{
     .existing-inventory{
         width: 9.875rem;
         padding: 0.75rem 1rem;
-    }
-    .content{
-        padding-bottom: 1.4vh;
     }
 }
 @media (max-width: 600px){

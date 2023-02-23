@@ -36,15 +36,6 @@ function rolar(){
         content_homepage.style.opacity=0
         down_arrow[0].style.opacity=0
 
-        text_h1.innerHTML="Model 3"
-        text_a.innerHTML='Schedule a Test Drive'
-        text_a.href='https://www.tesla.com/drive'
-
-        link_btn_custom_order.href='https://www.tesla.com/inventory/new/ms?arrangeby=relevance&zip=95113&range=200'
-        link_btn_existing_inventory.href='https://www.tesla.com/models/design#overview'
-
-        btn_custom_order.innerHTML='Buy Now'
-        btn_existing_inventory.innerHTML='Custom Order'
     }
     if(altura > 450){
         content_homepage.style.opacity=1
@@ -62,17 +53,6 @@ function rolar(){
     }
     if(altura > 773){
         content_homepage.style.opacity=0
-        down_arrow[0].style.opacity=0
-
-        text_h1.innerHTML="Model Y"
-        text_a.innerHTML='Schedule a Test Drive'
-        text_a.href='https://www.tesla.com/drive'
-
-        link_btn_custom_order.href='https://www.tesla.com/inventory/new/ms?arrangeby=relevance&zip=95113&range=200'
-        link_btn_existing_inventory.href='https://www.tesla.com/models/design#overview'
-
-        btn_custom_order.innerHTML='Buy Now'
-        btn_existing_inventory.innerHTML='Custom Order'
     }
     if(altura > 1075){
         content_homepage.style.opacity=1
@@ -90,17 +70,6 @@ function rolar(){
     }
     if(altura > 1400){
         content_homepage.style.opacity=0
-        down_arrow[0].style.opacity=0
-
-        text_h1.innerHTML="Model S"
-        text_a.innerHTML='Schedule a Test Drive'
-        text_a.href='https://www.tesla.com/drive'
-
-        link_btn_custom_order.href='https://www.tesla.com/inventory/new/ms?arrangeby=relevance&zip=95113&range=200'
-        link_btn_existing_inventory.href='https://www.tesla.com/models/design#overview'
-
-        btn_custom_order.innerHTML='Buy Now'
-        btn_existing_inventory.innerHTML='Custom Order'
     }
     if(altura > 1700){
         content_homepage.style.opacity=1
@@ -118,23 +87,12 @@ function rolar(){
     }
     if(altura > 2020){
         content_homepage.style.opacity=0
-        down_arrow[0].style.opacity=0
-
-        text_h1.innerHTML="Model S"
-        text_a.innerHTML='Schedule a Test Drive'
-        text_a.href='https://www.tesla.com/drive'
-
-        link_btn_custom_order.href='https://www.tesla.com/inventory/new/ms?arrangeby=relevance&zip=95113&range=200'
-        link_btn_existing_inventory.href='https://www.tesla.com/models/design#overview'
-
-        btn_custom_order.innerHTML='Buy Now'
-        btn_existing_inventory.innerHTML='Custom Order'
     }
     if(altura > 2320){
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=0
 
-        text_h1.innerHTML="Roof Panel"
+        text_h1.innerHTML="Solar Roof"
         text_a.innerHTML='Schedule a Test Drive'
         text_a.href='https://www.tesla.com/drive'
 
@@ -146,23 +104,12 @@ function rolar(){
     }
     if(altura > 2650){
         content_homepage.style.opacity=0
-        down_arrow[0].style.opacity=0
-
-        text_h1.innerHTML="Model S"
-        text_a.innerHTML='Schedule a Test Drive'
-        text_a.href='https://www.tesla.com/drive'
-
-        link_btn_custom_order.href='https://www.tesla.com/inventory/new/ms?arrangeby=relevance&zip=95113&range=200'
-        link_btn_existing_inventory.href='https://www.tesla.com/models/design#overview'
-
-        btn_custom_order.innerHTML='Buy Now'
-        btn_existing_inventory.innerHTML='Custom Order'
     }
     if(altura > 2950){
         content_homepage.style.opacity=1
         down_arrow[0].style.opacity=0
 
-        text_h1.innerHTML="Solar Painel"
+        text_h1.innerHTML="Solar Panels"
         text_a.innerHTML='Schedule a Test Drive'
         text_a.href='https://www.tesla.com/drive'
 
